@@ -19,16 +19,17 @@ CapsLock::
 return
 
 ;===============================================================================================
-; Bind jkli to left, down, right & up Plus others
+; Bind capslock and ijkl to up, left, down, right and u, o to Home & End, h & ; to control+left, control+right
 ;===============================================================================================
 
-CapsLock & j::Send, {blind}{Left}
-CapsLock & k::Send, {blind}{Down}
-CapsLock & l::Send, {blind}{Right}
-CapsLock & i::Send, {blind}{Up}
-CapsLock & h::Send, {blind}{Backspace}
-CapsLock & y::Send, {blind}{Home}
-CapsLock & o::Send, {blind}{End}
+CapsLock & u::Send,  {blind}{Home}
+CapsLock & o::Send,  {blind}{End}
+CapsLock & j::Send,  {blind}{Left}
+CapsLock & k::Send,  {blind}{Down}
+CapsLock & l::Send,  {blind}{Right}
+CapsLock & i::Send,  {blind}{Up}
+CapsLock & h::Send,  ^{Left}
+CapsLock & `;::Send, ^{Right}
 
 ;================================================================================================
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
