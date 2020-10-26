@@ -19,7 +19,7 @@ CapsLock::
 return
 
 ;===============================================================================================
-; Bind capslock and ijkl to up, left, down, right and u, o to Home & End, h & ; to control+left, control+right
+; Bind Caps and ijkl to up, left, down, right and u, o to Home & End
 ;===============================================================================================
 
 CapsLock & u::Send,  {blind}{Home}
@@ -28,8 +28,18 @@ CapsLock & j::Send,  {blind}{Left}
 CapsLock & k::Send,  {blind}{Down}
 CapsLock & l::Send,  {blind}{Right}
 CapsLock & i::Send,  {blind}{Up}
-CapsLock & h::Send,  ^{Left}
+
+;===============================================================================================
+; Word skip: Bind Caps + h & ; to control+left, control+right
+;===============================================================================================
+CapsLock & h::Send,  ^{Left} 
 CapsLock & `;::Send, ^{Right}
+
+;===============================================================================================
+; Editing: Bind Caps + y, p to Backspace and Delete
+;===============================================================================================
+CapsLock & y::Send, {blind}{Backspace}
+CapsLock & p::Send, {blind}{Delete}
 
 ;================================================================================================
 ; Hot keys with CapsLock modifier.  See https://autohotkey.com/docs/Hotkeys.htm#combo
